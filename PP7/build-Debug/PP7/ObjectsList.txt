@@ -1,0 +1,1 @@
+../build-Debug/PP7/up_pp8a_book.cpp.o ../build-Debug/PP7/up_pp8a_linkedlist.cpp.o ../build-Debug/PP7/up_pp8a_main.cpp.o ../build-Debug/PP7/up_pp8a_node.cpp.o   

@@ -1,0 +1,153 @@
+#include "book.h"
+#include <string>
+#include <stdio.h>
+#include <string.h>
+#include <stdlib.h>
+
+Book::Book(){
+     ISBN = "";
+	 title = "";
+	 author = "";
+	 publisher = "";
+	 year = 1;
+	 edition = 1;
+    
+}
+
+Book::Book( string i, string t, string a, string p, int y, int e){
+    setISBN( i );
+    setTitle( t );
+    setAuthor( a );
+    setPublisher( p );
+    setYear( y );
+    setEdition( e );
+}
+
+Book::Book( const Book& newBook){
+    setBook( newBook ); 
+}
+
+void Book::setISBN( string newISBN){
+    ISBN = newISBN;
+}
+
+void Book::setTitle( string newTitle ){
+    title = newTitle;
+}
+
+void Book::setAuthor( string newAuthor ){
+    author = newAuthor;
+}
+
+void Book::setPublisher( string newPublisher ){
+    publisher = newPublisher;
+}
+
+void Book::setYear( int newYear ){
+    if( newYear > year ){
+    year = newYear;
+    }
+}
+
+void Book::setEdition( int newEdition ){
+    if( newEdition > edition ){
+    edition = newEdition;
+    }
+}
+
+void Book::setBook( const Book& newBook ){
+    setISBN( newBook.ISBN );
+    setTitle( newBook.title );
+    setAuthor( newBook.author );
+    setPublisher( newBook.publisher );
+    setYear( newBook.year );
+    setEdition( newBook.edition );
+}
+
+Book& Book::operator=( const Book& b1 ){
+    ISBN = b1.ISBN;
+	 title = b1.title;
+	 author = b1.author;
+	 publisher = b1.publisher;
+	 year = b1.year;
+	 edition = b1.edition;
+    return( *this );
+}
+
+ostream& operator<<( ostream& outstream, const Book& b ){
+    outstream << b.ISBN << " " << b.title << endl << b.author << endl << b.publisher << " " << b.year << " " << b.edition << endl;
+    return outstream;
+}
+
+istream& operator>>( istream& instream, Book& b ){
+    string tempString;
+    
+    getline(instream, b.ISBN);
+    getline(instream, b.title);
+    getline(instream, b.author);
+    getline(instream, b.publisher);
+    instream >> b.year >> b.edition;
+    
+    return instream;
+}
+
+bool operator==( const Book& b1, const Book& b2 ){
+    ////bool returnValue;
+    
+    ////cout << "|" << b1.title << "| " << "|" << b2.title << "| " << endl;
+    ////cout << "|" << b1.ISBN << "| " << "|" << b2.ISBN << "| " << endl;
+    ////cout << "|" << b1.author << "| " << "|" << b2.author << "| " << endl;
+    ////cout << "|" << b1.publisher << "| " << "|" << b2.publisher << "| " << endl;
+    ////cout << "|" << b1.year << "| " << "|" << b2.year << "| " << endl;
+    ////cout << "|" << b1.edition << "| " << "|" << b2.edition << "| " << endl;
+    if(  b1.ISBN == b2.ISBN && b1.title == b2.title ){
+        return true;
+    } 
+    ////if(  b1.ISBN == b2.ISBN && b1.title == b2.title && b1.author == b2.author && b1.publisher == b2.publisher && b1.year == b2.year && b1.edition == b2.edition ){
+        ////return true;
+    ////} 
+    return false;
+    ////cout << "return value : " << returnValue << endl;
+}
+
+ostream& Book::write( ostream& outBin ) const {
+   struct book_t {
+      char ISBN[128];
+      char title[128];
+      char author[128];
+      char publisher[128];
+      int year;
+      int edition;
+   } b;
+
+   strcpy( b.ISBN, ISBN.c_str() );
+   strcpy( b.title, title.c_str() );
+   strcpy( b.author, author.c_str() );
+   strcpy( b.publisher, publisher.c_str() );
+   b.year = year;
+   b.edition = edition;
+   outBin.write( (char*)&b, sizeof(book_t) );
+   return outBin;
+}
+
+istream& Book::read( istream& input ){
+    int i = 0;
+   
+    struct book_t {
+      char ISBN[128];
+      char title[128];
+      char author[128];
+      char publisher[128];
+      int year;
+      int edition;
+   } b;
+
+
+        input.read((char*)&b, sizeof(Book));
+        while(i < 4){
+            i++;
+            input.read((char*)&b, sizeof(Book));
+        }
+}
+
+

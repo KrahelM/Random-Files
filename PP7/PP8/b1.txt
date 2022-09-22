@@ -1,0 +1,24 @@
+979-0-13-376131-3
+Python Programming
+Y. Daniel Liang
+Pearson Publishing
+2014
+10
+978-1-890774-44-8
+Java Servlets and JSP
+Joel Murach
+Murach Publishing
+2008
+2
+977-0-13-359174-3
+Problem Solving With C++
+Walter Savitch
+Pearson Publishing
+2014
+9
+0-13-288366-X
+Data Structures and Program Design in C
+Robert Kruse
+Prentice Hall Publishing
+1997
+2
