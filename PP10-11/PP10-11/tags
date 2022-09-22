@@ -1,0 +1,15 @@
+Book	C:\Users\User\Desktop\C1020\Workspaces\PP9\PP9b\book.cpp	/^Book::Book() {$/;"	function	line:13	class:Book	signature:()	returns:Book :: 
+Book	C:\Users\User\Desktop\C1020\Workspaces\PP9\PP9b\book.cpp	/^Book::Book( string i, string t, string a, string p, int y, int e ) {$/;"	function	line:27	class:Book	signature:( string i, string t, string a, string p, int y, int e )	returns:Book :: 
+Book	C:\Users\User\Desktop\C1020\Workspaces\PP9\PP9b\book.cpp	/^Book::Book( const Book& b ) {$/;"	function	line:38	class:Book	signature:( const Book& b )	returns:Book :: 
+setIsbn	C:\Users\User\Desktop\C1020\Workspaces\PP9\PP9b\book.cpp	/^void Book::setIsbn( string i ) {$/;"	function	line:52	class:Book	signature:( string i )	returns:void Book :: 
+setTitle	C:\Users\User\Desktop\C1020\Workspaces\PP9\PP9b\book.cpp	/^void Book::setTitle( string t ) {$/;"	function	line:60	class:Book	signature:( string t )	returns:void Book :: 
+setAuthor	C:\Users\User\Desktop\C1020\Workspaces\PP9\PP9b\book.cpp	/^void Book::setAuthor( string a ) {$/;"	function	line:68	class:Book	signature:( string a )	returns:void Book :: 
+setPublisher	C:\Users\User\Desktop\C1020\Workspaces\PP9\PP9b\book.cpp	/^void Book::setPublisher( string p ) {$/;"	function	line:76	class:Book	signature:( string p )	returns:void Book :: 
+setYear	C:\Users\User\Desktop\C1020\Workspaces\PP9\PP9b\book.cpp	/^void Book::setYear( int y ) {$/;"	function	line:83	class:Book	signature:( int y )	returns:void Book :: 
+setEdition	C:\Users\User\Desktop\C1020\Workspaces\PP9\PP9b\book.cpp	/^void Book::setEdition( int e ) {$/;"	function	line:91	class:Book	signature:( int e )	returns:void Book :: 
+setBook	C:\Users\User\Desktop\C1020\Workspaces\PP9\PP9b\book.cpp	/^void Book::setBook( const Book& b) {$/;"	function	line:100	class:Book	signature:( const Book& b)	returns:void Book :: 
+operator <<	C:\Users\User\Desktop\C1020\Workspaces\PP9\PP9b\book.cpp	/^ostream& operator<<( ostream& outStream, const Book& b ) {$/;"	function	line:115	signature:( ostream& outStream, const Book& b )	returns:ostream 
+operator >>	C:\Users\User\Desktop\C1020\Workspaces\PP9\PP9b\book.cpp	/^istream& operator>>( istream& inStream, Book& b )  {$/;"	function	line:128	signature:( istream& inStream, Book& b )	returns:istream 
+operator ==	C:\Users\User\Desktop\C1020\Workspaces\PP9\PP9b\book.cpp	/^bool operator==( const Book& b1, const Book& b2 ) {$/;"	function	line:141	signature:( const Book& b1, const Book& b2 )	returns:bool 
+operator =	C:\Users\User\Desktop\C1020\Workspaces\PP9\PP9b\book.cpp	/^Book& Book::operator=( const Book& b ) {$/;"	function	line:149	class:Book	signature:( const Book& b )	returns:Book Book :: 
+operator <	C:\Users\User\Desktop\C1020\Workspaces\PP9\PP9b\book.cpp	/^bool operator<(const Book& b1, const Book& b2 ) {$/;"	function	line:166	signature:(const Book& b1, const Book& b2 )	returns:bool 
