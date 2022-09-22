@@ -1,0 +1,1 @@
+../build-Debug/C1020a12Lab4/big5assessment.cpp.o ../build-Debug/C1020a12Lab4/main.cpp.o   

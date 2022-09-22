@@ -1,0 +1,18 @@
+NODE_H	C:\Users\User\Desktop\C1020\C1020a12Lab4\C1020a12Lab4\C1020a12Lab4\node.h	/^#define NODE_H$/;"	macro	line:2
+Node	C:\Users\User\Desktop\C1020\C1020a12Lab4\C1020a12Lab4\C1020a12Lab4\node.h	/^template<class T> class Node { /;"	class	line:21
+Node	C:\Users\User\Desktop\C1020\C1020a12Lab4\C1020a12Lab4\C1020a12Lab4\node.h	/^   Node(); \/\/ default constuctor$/;"	prototype	line:23	class:Node	access:public	signature:()
+Node	C:\Users\User\Desktop\C1020\C1020a12Lab4\C1020a12Lab4\C1020a12Lab4\node.h	/^   Node( const T& ); $/;"	prototype	line:25	class:Node	access:public	signature:( const T& )
+Node	C:\Users\User\Desktop\C1020\C1020a12Lab4\C1020a12Lab4\C1020a12Lab4\node.h	/^   Node( const Node<T>& );  $/;"	prototype	line:27	class:Node	access:public	signature:( const Node<T>& )
+~Node	C:\Users\User\Desktop\C1020\C1020a12Lab4\C1020a12Lab4\C1020a12Lab4\node.h	/^   virtual ~Node<T>() {} \/\/ destructor$/;"	function	line:28	class:Node	access:public	implementation:virtual	signature:()	returns:virtual 
+setItem	C:\Users\User\Desktop\C1020\C1020a12Lab4\C1020a12Lab4\C1020a12Lab4\node.h	/^   void setItem( const T& ); $/;"	prototype	line:29	class:Node	access:public	signature:( const T& )	returns:void 
+getItem	C:\Users\User\Desktop\C1020\C1020a12Lab4\C1020a12Lab4\C1020a12Lab4\node.h	/^   T getItem() { return item; } $/;"	function	line:30	class:Node	access:public	signature:()	returns:T 
+operator =	C:\Users\User\Desktop\C1020\C1020a12Lab4\C1020a12Lab4\C1020a12Lab4\node.h	/^   Node<T>& operator=( const Node<T>& );$/;"	prototype	line:31	class:Node	access:public	signature:( const Node<T>& )	returns:Node <T> 
+leftPtr	C:\Users\User\Desktop\C1020\C1020a12Lab4\C1020a12Lab4\C1020a12Lab4\node.h	/^   Node<T>* leftPtr;$/;"	member	line:35	class:Node	access:private
+rightPtr	C:\Users\User\Desktop\C1020\C1020a12Lab4\C1020a12Lab4\C1020a12Lab4\node.h	/^   Node<T>* rightPtr;$/;"	member	line:36	class:Node	access:private
+parentPtr	C:\Users\User\Desktop\C1020\C1020a12Lab4\C1020a12Lab4\C1020a12Lab4\node.h	/^   Node<T>* parentPtr;$/;"	member	line:37	class:Node	access:private
+item	C:\Users\User\Desktop\C1020\C1020a12Lab4\C1020a12Lab4\C1020a12Lab4\node.h	/^   T item;$/;"	member	line:38	class:Node	access:private
+setItem	C:\Users\User\Desktop\C1020\C1020a12Lab4\C1020a12Lab4\C1020a12Lab4\node.h	/^template<class T> void Node<T>::setItem(const T& i) $/;"	function	line:43	class:Node	signature:(const T& i)	returns:template void Node <T> :: 
+Node	C:\Users\User\Desktop\C1020\C1020a12Lab4\C1020a12Lab4\C1020a12Lab4\node.h	/^template <class T> Node<T>::Node() $/;"	function	line:50	class:Node	signature:()	returns:template Node <T> :: 
+Node	C:\Users\User\Desktop\C1020\C1020a12Lab4\C1020a12Lab4\C1020a12Lab4\node.h	/^template <class T> Node<T>::Node(const T& i) $/;"	function	line:57	class:Node	signature:(const T& i)	returns:template Node <T> :: 
+Node	C:\Users\User\Desktop\C1020\C1020a12Lab4\C1020a12Lab4\C1020a12Lab4\node.h	/^template <class T> Node<T>::Node(const Node<T>& n) $/;"	function	line:64	class:Node	signature:(const Node<T>& n)	returns:template Node <T> :: 
+operator =	C:\Users\User\Desktop\C1020\C1020a12Lab4\C1020a12Lab4\C1020a12Lab4\node.h	/^template <class T> Node<T>& Node<T>::operator=(const Node<T>& n) $/;"	function	line:72	class:Node	signature:(const Node<T>& n)	returns:template Node <T> Node <T> :: 
