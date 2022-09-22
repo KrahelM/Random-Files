@@ -1,0 +1,27 @@
+TIMESTAMP_H	C:\Users\User\Desktop\C1020\Workspaces\c1020a12Lab3\c1020a12Lab3\timestamp.h	/^#define TIMESTAMP_H$/;"	macro	line:2
+timestamp	C:\Users\User\Desktop\C1020\Workspaces\c1020a12Lab3\c1020a12Lab3\timestamp.h	/^class timestamp {$/;"	class	line:9
+hour	C:\Users\User\Desktop\C1020\Workspaces\c1020a12Lab3\c1020a12Lab3\timestamp.h	/^    int hour;$/;"	member	line:11	class:timestamp	access:private
+min	C:\Users\User\Desktop\C1020\Workspaces\c1020a12Lab3\c1020a12Lab3\timestamp.h	/^    int min;$/;"	member	line:12	class:timestamp	access:private
+sec	C:\Users\User\Desktop\C1020\Workspaces\c1020a12Lab3\c1020a12Lab3\timestamp.h	/^    int sec;$/;"	member	line:13	class:timestamp	access:private
+milli	C:\Users\User\Desktop\C1020\Workspaces\c1020a12Lab3\c1020a12Lab3\timestamp.h	/^    int milli;$/;"	member	line:14	class:timestamp	access:private
+totalMilli	C:\Users\User\Desktop\C1020\Workspaces\c1020a12Lab3\c1020a12Lab3\timestamp.h	/^    int totalMilli;$/;"	member	line:15	class:timestamp	access:private
+timestamp	C:\Users\User\Desktop\C1020\Workspaces\c1020a12Lab3\c1020a12Lab3\timestamp.h	/^    timestamp();$/;"	prototype	line:18	class:timestamp	access:public	signature:()
+timestamp	C:\Users\User\Desktop\C1020\Workspaces\c1020a12Lab3\c1020a12Lab3\timestamp.h	/^    timestamp(int&);$/;"	prototype	line:19	class:timestamp	access:public	signature:(int&)
+timestamp	C:\Users\User\Desktop\C1020\Workspaces\c1020a12Lab3\c1020a12Lab3\timestamp.h	/^    timestamp(int, int, int, int);$/;"	prototype	line:20	class:timestamp	access:public	signature:(int, int, int, int)
+operator >>	C:\Users\User\Desktop\C1020\Workspaces\c1020a12Lab3\c1020a12Lab3\timestamp.h	/^    friend bool operator>>(string&, timestamp&);$/;"	prototype	line:22	class:timestamp	access:friend	signature:(string&, timestamp&)	returns:friend bool 
+operator =	C:\Users\User\Desktop\C1020\Workspaces\c1020a12Lab3\c1020a12Lab3\timestamp.h	/^    timestamp& operator=(const timestamp&);$/;"	prototype	line:23	class:timestamp	access:public	signature:(const timestamp&)	returns:timestamp 
+operator -	C:\Users\User\Desktop\C1020\Workspaces\c1020a12Lab3\c1020a12Lab3\timestamp.h	/^    int operator-(timestamp&);$/;"	prototype	line:24	class:timestamp	access:public	signature:(timestamp&)	returns:int 
+operator <<	C:\Users\User\Desktop\C1020\Workspaces\c1020a12Lab3\c1020a12Lab3\timestamp.h	/^    friend ostream& operator<<(ostream&, timestamp&);$/;"	prototype	line:25	class:timestamp	access:friend	signature:(ostream&, timestamp&)	returns:friend ostream 
+setHour	C:\Users\User\Desktop\C1020\Workspaces\c1020a12Lab3\c1020a12Lab3\timestamp.h	/^    friend void setHour(int);$/;"	prototype	line:27	class:timestamp	access:friend	signature:(int)	returns:friend void 
+setMin	C:\Users\User\Desktop\C1020\Workspaces\c1020a12Lab3\c1020a12Lab3\timestamp.h	/^    void setMin(int);$/;"	prototype	line:28	class:timestamp	access:public	signature:(int)	returns:void 
+setSec	C:\Users\User\Desktop\C1020\Workspaces\c1020a12Lab3\c1020a12Lab3\timestamp.h	/^    void setSec(int);$/;"	prototype	line:29	class:timestamp	access:public	signature:(int)	returns:void 
+setMilli	C:\Users\User\Desktop\C1020\Workspaces\c1020a12Lab3\c1020a12Lab3\timestamp.h	/^    void setMilli(int);$/;"	prototype	line:30	class:timestamp	access:public	signature:(int)	returns:void 
+setTotalMilli	C:\Users\User\Desktop\C1020\Workspaces\c1020a12Lab3\c1020a12Lab3\timestamp.h	/^    void setTotalMilli(int);$/;"	prototype	line:31	class:timestamp	access:public	signature:(int)	returns:void 
+getHour	C:\Users\User\Desktop\C1020\Workspaces\c1020a12Lab3\c1020a12Lab3\timestamp.h	/^    int getHour() const { return hour; }$/;"	function	line:33	class:timestamp	access:public	signature:() const	returns:int 
+getMin	C:\Users\User\Desktop\C1020\Workspaces\c1020a12Lab3\c1020a12Lab3\timestamp.h	/^    int getMin() const { return min; }$/;"	function	line:34	class:timestamp	access:public	signature:() const	returns:int 
+getSec	C:\Users\User\Desktop\C1020\Workspaces\c1020a12Lab3\c1020a12Lab3\timestamp.h	/^    int getSec() const { return sec; }$/;"	function	line:35	class:timestamp	access:public	signature:() const	returns:int 
+getMilli	C:\Users\User\Desktop\C1020\Workspaces\c1020a12Lab3\c1020a12Lab3\timestamp.h	/^    int getMilli() const { return milli; }$/;"	function	line:36	class:timestamp	access:public	signature:() const	returns:int 
+getTotalMilli	C:\Users\User\Desktop\C1020\Workspaces\c1020a12Lab3\c1020a12Lab3\timestamp.h	/^    int getTotalMilli() const { return totalMilli; }$/;"	function	line:37	class:timestamp	access:public	signature:() const	returns:int 
+MILLI_PER_HOUR	C:\Users\User\Desktop\C1020\Workspaces\c1020a12Lab3\c1020a12Lab3\timestamp.h	/^    const int MILLI_PER_HOUR = 3600000;$/;"	member	line:39	class:timestamp	access:public
+MILLI_PER_MIN	C:\Users\User\Desktop\C1020\Workspaces\c1020a12Lab3\c1020a12Lab3\timestamp.h	/^    const int MILLI_PER_MIN = 60000;$/;"	member	line:40	class:timestamp	access:public
+MILLI_PER_SEC	C:\Users\User\Desktop\C1020\Workspaces\c1020a12Lab3\c1020a12Lab3\timestamp.h	/^    const int MILLI_PER_SEC = 1000;$/;"	member	line:41	class:timestamp	access:public
