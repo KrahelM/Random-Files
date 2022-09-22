@@ -1,0 +1,37 @@
+// This program reads data from a file into an array.
+// Version 2: Ask user for file name
+#include <iostream>
+#include <fstream>
+using namespace std;
+
+int main()
+{
+	const int ARRAY_SIZE = 10; // Array size
+	int numbers[ARRAY_SIZE];   // Array with 10 elements
+	int count = 0;             // Loop counter variable
+	ifstream inputFile;        // Input file stream object
+	char infileName[356];
+	
+	// Request file name from user
+	cout << "Input file name: ";
+	cin >> infileName;
+	
+	
+	// Open the file.
+	inputFile.open(infileName); 
+	
+	// Read the numbers from the file into the array.
+	while (count < ARRAY_SIZE && inputFile >> numbers[count])
+       count++;
+	
+	// Close the file.
+	inputFile.close();
+	
+	// Display the numbers read:
+	cout << "The numbers are: ";
+	for (int i = 0; i < count; i++)
+       cout << numbers[i] << " ";
+	cout << endl;
+	
+	return 0;
+}

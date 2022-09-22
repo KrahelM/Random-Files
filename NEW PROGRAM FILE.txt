@@ -1,0 +1,83 @@
+/*File: FILE NAME
+	Author: Matthew Krahel and Blake Hodges
+	DESCRIPTION
+*/
+
+#include <iostrem>
+using namespace std;
+int main()
+{
+DECLARE VARIABLES (int FOR AN INTEGER) [int number1;]
+	// DESCRIPTION OF MAIN 
+
+
+
+
+	return 0;
+}	
+
+
+
+// EASY TO COPY ITEMS
+// cout << 
+// cin >>
+
+
+
+Notes:
+IF ELSE STATEMENTS
+	if (variable > 10)
+		Variable + 5
+	else
+		Variable + 7
+		
+		
+NOTE THAT || means OR		
+		
+	if (variable > 10) || (variable = other variable)
+		Variable + 5
+	else
+		Variable + 7
+		
+NOTE THAT && means AND		
+		
+	if (variable > 10) && (variable = other variable)
+		Variable + 5
+	else
+		Variable + 7
+
+MULTIWAY IF ELSE STATEMENTS
+	if (variable > 10)
+		Variable + 5
+	else if (variable > 5)
+		Variable + 7
+	else if (variable > 1)
+		Variable + 2
+
+SWITCH STATEMENTS
+	switch (CONTROLLING_EXPRESSION)
+	{
+		case CONSTANT_1:
+			cout << "GOOD ANSWER"
+				 << "YOU ARE ALL SET"
+			break;	 
+		case CONSTANT_2
+			cout << "DECENT ANSWER"
+				 << "YOU CAN IMPROVE SOME"
+			break;	 
+		case CONSTANT_3
+			cout << "WRONG ANSWER"
+				 << "YOU NEED TO TRY AGAIN"
+			break;
+		default:
+			cout << "INCORRECT VALUE ENTERED, PLEASE TRY AGAIN"
+	}		
+		
+ARITHMETIC
+== is equal to (=)
+!= is not equal to NOTE THAT ! makes anything TRUE as FALSE and FALSE as TRUE
+< is less than
+<= is less than or equal to
+> is greater than
+>= is greater than or equal to
+		
