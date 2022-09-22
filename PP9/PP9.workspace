@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeLite_Workspace Name="PP9" Database="" Version="10000">
+  <Project Name="PP9a" Path="PP9a/PP9a.project" Active="No"/>
+  <Project Name="PP9b" Path="PP9b/PP9b.project" Active="Yes"/>
+  <BuildMatrix>
+    <WorkspaceConfiguration Name="Debug" Selected="yes">
+      <Environment/>
+      <Project Name="PP9a" ConfigName="Debug"/>
+      <Project Name="PP9b" ConfigName="Debug"/>
+    </WorkspaceConfiguration>
+    <WorkspaceConfiguration Name="Release" Selected="yes">
+      <Environment/>
+      <Project Name="PP9a" ConfigName="Release"/>
+      <Project Name="PP9b" ConfigName="Release"/>
+    </WorkspaceConfiguration>
+  </BuildMatrix>
+</CodeLite_Workspace>
